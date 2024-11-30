@@ -43,11 +43,23 @@ class HomePage extends StatelessWidget {
               final task = tasks[index];
               return ListTile(
                 title: Text(task['title']),
-                trailing: IconButton(
-                  icon: Icon(Icons.edit),
-                  onPressed: () {
-                    _showEditDialog(context, task['id'], task['title']);
-                  },
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.edit),
+                      onPressed: () {
+                        _showEditDialog(context, task['id'], task['title']);
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.delete, color: Colors.red),
+                      onPressed: () {
+                        Provider.of<TodoProvider>(context, listen: false)
+                            .deleteTask(task['id']);
+                      },
+                    ),
+                  ],
                 ),
               );
             },

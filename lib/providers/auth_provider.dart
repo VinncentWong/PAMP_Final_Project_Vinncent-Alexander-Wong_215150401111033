@@ -16,7 +16,7 @@ class AuthProvider extends ChangeNotifier {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
       notifyListeners();
     } catch (e) {
-      print('Login error: $e');
+      throw Exception('Login error: $e');
     }
   }
 
@@ -26,7 +26,7 @@ class AuthProvider extends ChangeNotifier {
           email: email, password: password);
       notifyListeners();
     } catch (e) {
-      print('Registration error: $e');
+      throw Exception('Registration error: $e');
     }
   }
 
