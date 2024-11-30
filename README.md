@@ -1,16 +1,13 @@
-# pamp_final_project
+# Tugas Akhir PAM - Vinncent Alexander Wong - 215150401111033 - Pengembangan Aplikasi Multiplatform B
 
-A new Flutter project.
+### Requirement
+Membuat Aplikasi dengan kriteria minimal :
 
-## Getting Started
+1. Menerapkan Firebase AUTH untuk register dan Login dan cek user sudah login atau belum. Jika sudah login / belum logout maka langsung diarahkan ke halaman home ✔️
+2. Menerapkan State Management Provider ✔️
+3. Menerapkan tampilan List ✔️
+4. Menerapkan Firebase Realtime Database ✔️
 
-This project is a starting point for a Flutter application.
+### Video Demo (Hasil Akhir)
+https://github.com/user-attachments/assets/321083b9-b849-4aef-bd9c-e6026da270ae
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
