@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:pamp_final_project/firebase_options.dart';
 import 'package:pamp_final_project/screens/register_page.dart';
+import 'package:pamp_final_project/screens/splash_page.dart';
 import 'package:provider/provider.dart';
 import './providers/auth_provider.dart';
 import './providers/todo_provider.dart';
@@ -29,9 +30,9 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'To-Do App',
+        title: 'Activity Tracker',
         theme: ThemeData(primarySwatch: Colors.blue),
-        home: const LoginPage(),
+        home: const SplashPage(),
         routes: {
           '/login': (context) => const LoginPage(),
           '/register': (context) => const RegisterPage(),
